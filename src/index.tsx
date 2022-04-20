@@ -1,12 +1,12 @@
 import React, {FC, ReactChild, ReactNode} from 'react'
-import { motion } from "framer-motion";
+import { motion, MotionProps } from "framer-motion";
 import variants from './variants'
 export {variants}
 export type AnimationType = "zoom" | "zoomOver" | "fadeIn" | "fadeInUp" | "fadeInDown" | "fadeInLeft" | "fadeInRight"
 
-interface Props{
-   children: ReactChild | ReactNode,
-   type?: AnimationType
+interface Props extends MotionProps{
+   children: ReactChild | ReactNode;
+   type?: AnimationType;
 }
 
 export const AnimateBox: FC<Props> = ({children, type, ...props}) => {
