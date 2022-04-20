@@ -2,7 +2,7 @@ import React, {FC, ReactChild, ReactNode} from 'react'
 import { motion } from "framer-motion";
 import variants from './variants'
 export {variants}
-export type AnimationType = "zoom" | "ZoomOver" | "FadeIn" | "FadeInUp" | "FadeInDown" | "FadeInLeft" | "FadeInRight"
+export type AnimationType = "zoom" | "zoomOver" | "fadeIn" | "fadeInUp" | "fadeInDown" | "fadeInLeft" | "fadeInRight"
 
 interface Props{
    children: ReactChild | ReactNode,
